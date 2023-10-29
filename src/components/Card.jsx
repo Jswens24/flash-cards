@@ -1,9 +1,16 @@
 import React from 'react'
 
-const Card = ({ topic }) => {
-    console.log('in the card', topic);
+const Card = ({ question, answer, id }) => {
+
     return (
-        <div>Card</div>
+        <div>
+            <div>
+                <h2>{question}</h2>
+            </div>
+            <div>
+                <h3>{answer}</h3>
+            </div>
+        </div>
     )
 }
 
