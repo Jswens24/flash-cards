@@ -141,3 +141,56 @@ export const javascriptData = [
         answer: "Arrow functions are a more concise way to write functions in JavaScript. They have a shorter syntax and inherit the 'this' value from their surrounding code(where they're created, not where they're called). They are suitable for short, simple functions, but they cannot be used as constructors, have no 'arguments' object, and may not work well in certain cases that require a specific 'this' context."
     },
 ]
+
+export const globalStateReactData = [
+    {
+        questionId: 28,
+        question: 'What is Redux, and why is it commonly used in React applications?',
+        answer: 'Redux is a state management library for React applications. It provides a predictable and centralized way to manage the state of an application, making it easier to share and update data across components. Redux is commonly used to simplify state management, especially in large and complex applications, and to enhance debugging and testing capabilities.'
+    },
+    {
+        questionId: 29,
+        question: 'Explain the core concepts of Redux, such as actions, reducers, and the store. How do they work together to manage application state?',
+        answer: "In Redux, actions are plain JavaScript objects that describe state changes. Reducers are functions that handle these actions and specify how the state changes. The store is a single source of truth that holds the application's state. Actions are dispatched to the store, and reducers update the state based on the actions, creating a unidirectional data flow."
+    },
+    {
+        questionId: 30,
+        question: 'What is the difference between the actions and action creators in Redux? How and why would you use action creators?',
+        answer: 'Actions are plain objects with a type property that describe the state change, while action creators are functions that create and return these action objects. Action creators help encapsulate the logic for creating actions, making it easier to dispatch actions in a consistent manner and reducing potential errors in action creation.'
+    },
+    {
+        questionId: 31,
+        question: 'Explain the purpose of the Context API in React. How does it enable components to access global state without prop drilling?',
+        answer: 'The Context API allows components to access global state or data without prop drilling, which is the process of passing props through multiple intermediary components. It provides a way to share values such as themes, user authentication, or other global data with components at any level in the component tree.'
+    },
+    {
+        questionId: 32,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 33,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 34,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 35,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 36,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 37,
+        question: '',
+        answer: ''
+    },
+]
