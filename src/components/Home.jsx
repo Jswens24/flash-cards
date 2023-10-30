@@ -15,6 +15,9 @@ const Home = () => {
             <Link to='/flashcard/javascriptData'>
                 <button>Javascript</button>
             </Link>
+            <Link to='/flashcard/globalStateReactData'>
+                <button>Global State React</button>
+            </Link>
         </div>
     )
 }

@@ -165,31 +165,84 @@ export const globalStateReactData = [
     },
     {
         questionId: 32,
-        question: '',
-        answer: ''
+        question: 'What are the key components of the Context API, including Provider and useContext? How do they work together to make context available to components?',
+        answer: 'The Context API includes the Provider component, which wraps the application or a part of it and makes the context available to its descendants. The useContext hook allows you to access the context from the Provider in components that are wrapped in it.'
     },
     {
         questionId: 33,
-        question: '',
-        answer: ''
+        question: "Why might you choose to manage global state using Redux over React's Context API? What are the advantages and disadvantages of each approach?",
+        answer: "Redux is often chosen for managing global state when you need more control and structure for state management, especially in larger applications. It offers advanced features like middleware, time-travel debugging, and dev tools. React's Context API is simpler and more lightweight, suitable for smaller applications or when you need a basic global state solution without the complexity of Redux."
     },
     {
         questionId: 34,
-        question: '',
-        answer: ''
+        question: 'How can you manage global state in a React application without using external libraries like Redux or Context API?',
+        answer: 'You can manage global state in a React application without external libraries by lifting state to a common ancestor component, often referred to as "prop drilling." Alternatively, you can use other third-party state management libraries.'
     },
     {
         questionId: 35,
-        question: '',
-        answer: ''
+        question: 'What are the potential challenges and best practices when managing global state in a React application?',
+        answer: 'Challenges in global state management may include avoiding excessive re-renders, ensuring data consistency, and handling complex state updates. Best practices include minimizing global state usage, optimizing performance, and using appropriate libraries or patterns when necessary.'
     },
     {
         questionId: 36,
+        question: 'Explain the concept of immutability in relation to global state management. Why is it important, and how can you achieve it when working with global state in React?',
+        answer: "Immutability means that data cannot be changed after it's created. It's crucial for global state management because it ensures data consistency and makes it easier to track changes. To achieve immutability in React, you can use libraries like Redux, immer, or follow immutability principles when updating state. We don't change state in React, we update (replace) it."
+    },
+    {
+        questionId: 37,
+        question: 'What are the potential performance considerations when dealing with global state in a React application? How can you optimize the performance of components that rely on global state?',
+        answer: "When dealing with global state, it's essential to avoid unnecessary re-renders. Use memoization techniques, such as useMemo and useCallback, to optimize the performance of components that rely on global state. Additionally, consider using libraries or patterns that offer advanced optimizations, like Redux's connect function for reducing re-renders in connected components."
+    },
+]
+
+export const gitGithubData = [
+    {
+        questionId: 38,
         question: '',
         answer: ''
     },
     {
-        questionId: 37,
+        questionId: 39,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 40,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 41,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 42,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 43,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 44,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 45,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 46,
+        question: '',
+        answer: ''
+    },
+    {
+        questionId: 47,
         question: '',
         answer: ''
     },
