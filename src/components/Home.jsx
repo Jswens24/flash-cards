@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <div>
-            <h1>Welcome</h1>
+            <h1 className="text-3xl font-bold underline">Welcome</h1>
             <h3>Select a Topic</h3>
             <Link to='/flashcard/sqlData'>
                 <button>SQL, PostgreSQL, and Sequelize</button>
