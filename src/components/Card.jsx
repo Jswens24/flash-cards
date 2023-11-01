@@ -17,11 +17,11 @@ const Card = ({ data }) => {
 
 
     return (
-        <div className={`card ${flip ? 'flip' : ''} `}>
-            <div onClick={() => setFlip(!flip)} className='front-card'>
+        <div className='max-w-sm rounded overflow-hidden shadow-lg px-6 py-4'>
+            <div onClick={() => setFlip(!flip)} className={flip === true ? '' : 'hidden'}>
                 <h2>{question}</h2>
             </div>
-            <div onClick={() => setFlip(!flip)} className='back-card'>
+            <div onClick={() => setFlip(!flip)} className={flip === true ? 'hidden' : ''}>
                 <h3>{answer}</h3>
             </div>
             {data.length - 1 === idCount ? <Link to='/'><button>Back to Home</button></Link> : <button onClick={nextCardHandler}>Next Question</button>
