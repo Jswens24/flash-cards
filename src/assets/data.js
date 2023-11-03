@@ -198,52 +198,158 @@ export const globalStateReactData = [
 export const gitGithubData = [
     {
         questionId: 38,
-        question: '',
-        answer: ''
+        question: 'What is Git, and why is it essential for web development?',
+        answer: "Git is a distributed version control system that allows developers to track changes in their code. It's crucial for collaboration, tracking versions, and managing code repositories efficiently."
     },
     {
         questionId: 39,
-        question: '',
-        answer: ''
+        question: 'What is a "repository" in Git and GitHub?',
+        answer: 'A repository, often called "repo," is a location where Git stores all the files, commit history, and metadata for a project. GitHub is a platform for hosting Git repositories remotely.'
     },
     {
         questionId: 40,
-        question: '',
-        answer: ''
+        question: 'Explain the difference between Git and GitHub',
+        answer: 'Git is the version control system, while GitHub is a web-based platform that provides hosting and collaboration features for Git repositories. You use Git locally, and GitHub is for remote collaboration and storage.'
     },
     {
         questionId: 41,
-        question: '',
-        answer: ''
+        question: 'What is a "commit" in Git, and why is it important?',
+        answer: "A commit is a snapshot of the changes made to the code. It's crucial for tracking changes, documenting work, and maintaining a history of a project's development."
     },
     {
         questionId: 42,
-        question: '',
-        answer: ''
+        question: 'What is a "pull request" in GitHub?',
+        answer: 'A pull request is a feature in GitHub that allows developers to propose changes to a repository. Other team members can review, discuss, and approve these changes before merging them into the main codebase.'
     },
     {
         questionId: 43,
-        question: '',
-        answer: ''
+        question: 'How do you create a new branch in Git, and why would you need one?',
+        answer: "You can create a new branch in Git using the git branch or git checkout -b command. Branches are useful for isolating and working on new features or bug fixes without affecting the main code until they're ready."
     },
     {
         questionId: 44,
-        question: '',
-        answer: ''
+        question: 'What is the purpose of the ".gitignore" file?',
+        answer: "The '.gitignore' file specifies which files and directories should be excluded from version control. It's essential to prevent sensitive or unnecessary files from being added to the repository."
     },
     {
         questionId: 45,
-        question: '',
-        answer: ''
+        question: 'Explain the difference between "git pull" and "git fetch" commands.',
+        answer: '"git pull" fetches changes from a remote repository and merges them into your local branch, while "git fetch" only fetches the changes, allowing you to review and merge them manually.'
     },
     {
         questionId: 46,
-        question: '',
-        answer: ''
+        question: 'What is the Git workflow for collaborating with a team?',
+        answer: 'A common Git workflow includes creating branches for specific tasks, making commits, and pushing changes to a shared repository. Team members review changes through pull requests and merge them into the main branch when ready.'
     },
     {
         questionId: 47,
-        question: '',
-        answer: ''
+        question: 'How can you revert to a previous commit in Git?',
+        answer: 'You can revert to a previous commit using the "git reset" or "git checkout" commands. "git reset" is used for undoing changes and moving the branch pointer, while "git checkout" allows you to temporarily switch to a specific commit.'
+    },
+]
+
+export const cssData = [
+    {
+        questionId: 48,
+        question: 'What does CSS stand for, and what is its primary purpose in web development?',
+        answer: 'CSS stands for Cascading Style Sheets. Its primary purpose is to control the visual presentation and layout of web pages, allowing developers to style HTML elements.'
+    },
+    {
+        questionId: 49,
+        question: 'What is the difference between inline, internal, and external CSS styles?',
+        answer: 'Inline CSS is applied directly within the HTML element using the style attribute, internal CSS is placed within a <style> tag in the HTML document, and external CSS is stored in a separate .css file and linked to the HTML using <link> tags.'
+    },
+    {
+        questionId: 50,
+        question: "How do you select an HTML element with a specific ID in CSS, and what's the syntax for it?",
+        answer: 'To select an element with a specific ID in CSS, you use the # symbol followed by the ID name. For example, to select an element with the ID "myElement," you would write #myElement { /* CSS rules here */ }.'
+    },
+    {
+        questionId: 51,
+        question: 'Explain the concept of the CSS box model. ',
+        answer: "The CSS box model describes how elements are rendered in a rectangular box, consisting of content, padding, border, and margin. It affects an element's size and spacing."
+    },
+    {
+        questionId: 52,
+        question: 'How can you center an element horizontally and vertically in CSS?',
+        answer: 'To center an element vertically or horizontally, you typically use the flexbox or grid layout techniques. To center an element horizontally, you can also set its left and right margins to "auto."'
+    },
+    {
+        questionId: 53,
+        question: 'What is the purpose of the z-index property in CSS?',
+        answer: 'The z-index property controls the stacking order of elements on the z-axis. It is used to determine which elements appear on top of others in the layout.'
+    },
+    {
+        questionId: 54,
+        question: 'How can you create a responsive web design using CSS?',
+        answer: "A responsive design can be achieved by using media queries to adapt the layout and styles based on the user's device or screen size. Media queries allow you to define different CSS rules for various screen widths."
+    },
+    {
+        questionId: 55,
+        question: 'What is the difference between margin and padding in CSS?',
+        answer: "Margin is the space outside an element, affecting the space between elements, while padding is the space inside an element, affecting the space between an element's content and its border."
+    },
+    {
+        questionId: 56,
+        question: 'Explain the purpose of pseudo-classes in CSS and provide an example.',
+        answer: 'Pseudo-classes are used to define the special state of an element. For example, :hover is a pseudo-class that allows you to define styles when the mouse pointer hovers over an element.'
+    },
+    {
+        questionId: 57,
+        question: 'What is the importance of the "Cascading" in CSS, and how does it work?',
+        answer: 'The "Cascading" part of CSS means that multiple style rules can apply to the same element, and they cascade down in a specific order of importance. The order of importance is inline styles (highest priority), internal styles, external styles, and browser default styles (lowest priority). When there are conflicting rules, specificity and source order are used to determine which rule is applied.'
+    },
+]
+
+export const reactData = [
+    {
+        questionId: 58,
+        question: 'What is React, and why is it commonly used in web development?',
+        answer: 'React is a popular JavaScript library for building user interfaces. It is commonly used because it simplifies the process of creating interactive and reusable UI components. React makes it easy to manage the state of an application, efficiently update the DOM, and build single-page applications.'
+    },
+    {
+        questionId: 59,
+        question: 'Explain the difference between React components and elements. How are they used in building user interfaces?',
+        answer: 'React components are the building blocks of a React application. They are JavaScript classes or functions that describe what the user interface should look like. React elements, on the other hand, are the output of rendering a React component. Elements are lightweight, plain JavaScript objects that represent the structure of the user interface.'
+    },
+    {
+        questionId: 60,
+        question: 'What is JSX in React, and how does it enhance the development of user interfaces? Provide an example of JSX code.',
+        answer: 'JSX (JavaScript XML) is a syntax extension used in React to write HTML-like code within JavaScript. JSX enhances the development of user interfaces by making the code more readable and expressive. It allows developers to create and structure components in a way that resembles HTML. For example: const element = <h1>Hello, React!</h1>;'
+    },
+    {
+        questionId: 61,
+        question: "Describe the component lifecycle in React. What are the key lifecycle methods, and when are they invoked during a component's life cycle? How do you replicate the functionality of these methods in components using hooks?",
+        answer: "The component lifecycle in React consists of three main phases: mounting, updating, and unmounting. Key lifecycle methods include componentDidMount, componentDidUpdate, and componentWillUnmount. componentDidMount is called after a component is rendered to the DOM, componentDidUpdate after the component's state or props change, and componentWillUnmount before a component is removed from the DOM. The useEffect hook can be used to trigger effects at certain points in the component lifecycle when in a functional component using hooks."
+    },
+    {
+        questionId: 62,
+        question: 'What are props in React?',
+        answer: 'Props (short for properties) are a way to pass data from parent to child components in React. They are read-only and help to make components reusable.'
+    },
+    {
+        questionId: 63,
+        question: 'Explain the concept of state in React. How is state different from props, and when would you choose to use one over the other?',
+        answer: 'State in React is an internal data storage mechanism used to manage dynamic data that can change over time. It is different from props because state is mutable and controlled by the component itself, while props are read-only and passed from parent to child components. Use state for data that can change within a component and props for passing data to child components.'
+    },
+    {
+        questionId: 64,
+        question: 'What is the significance of the key prop in React when rendering lists or arrays of components? Why is it important, and what problems can it solve?',
+        answer: 'The key prop is used to assign a unique identifier to each item in a list or array of components. It is important because it helps React efficiently update the DOM when the list changes. Using unique keys helps React recognize which items have been added, removed, or reordered, reducing the need for expensive DOM operations and improving performance.'
+    },
+    {
+        questionId: 65,
+        question: 'Describe the role of React Router in single-page applications (SPAs). How can you implement routing in a React application using React Router?',
+        answer: 'React Router is a library for handling routing in single-page applications (SPAs) built with React. It allows you to define routes and render different components based on the URL. To implement routing in a React application using React Router, you can define routes using <Route>, use a <Router> component to manage the navigation, and render different components for each route.'
+    },
+    {
+        questionId: 66,
+        question: 'What is Redux, and why might you use it in a React application? How does Redux help manage the state of a complex application?',
+        answer: 'Redux is a state management library for React applications. It is used to manage the global state of a complex application, making it easier to share and update data across components. Redux provides a predictable state container, which simplifies debugging, testing, and scaling of React applications. It is particularly useful when handling large and complex application states.'
+    },
+    {
+        questionId: 67,
+        question: 'hat is unidirectional data flow in React, and why is it a key concept in the architecture of React applications?',
+        answer: "Unidirectional data flow is a fundamental concept in React that refers to the one-way flow of data through a React application. In React, data flows from parent components to child components but not the other way around. This design pattern ensures that the data and state of a React application are predictable and easy to manage. It simplifies debugging, as you can trace the flow of data from top-level components down to the leaf components. Unidirectional data flow also supports the idea of 'single source of truth,'' making it clear where the data originates and where it's used, which is crucial for maintaining the consistency and integrity of an application's state. This concept is key to creating maintainable, scalable, and predictable React applications."
     },
 ]
