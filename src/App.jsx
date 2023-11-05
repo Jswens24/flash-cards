@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom'
 function App() {
 
   return (
-    <>
+    <div>
       <RoutesContainer />
       <Link to='/'>
         <img className='h-10 m-4 fixed' src={homeImg} />
       </Link>
-    </>
+    </div>
   )
 }
 

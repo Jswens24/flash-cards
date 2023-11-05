@@ -8,7 +8,7 @@ const FlashCardPage = () => {
 
 
     return (
-        <div className='flex absolute justify-center flex-col items-center h-full w-full'>
+        <div className='flex absolute justify-center flex-col items-center h-full w-full bg-gray-100'>
             {topic === 'sqlData' ? <Card data={sqlData} /> : ''}
             {topic === 'nodeData' ? <Card data={nodeData} /> : ''}
             {topic === 'javascriptData' ? <Card data={javascriptData} /> : ''}

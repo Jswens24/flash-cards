@@ -13,6 +13,12 @@ const Card = ({ data }) => {
         setAnswer(data[idCount + 1].answer);
         setFlip(true)
     }
+    const lastCardHandler = () => {
+        setIdCount((idCount) => idCount -= 1)
+        setQuestion(data[idCount - 1].question);
+        setAnswer(data[idCount - 1].answer);
+        setFlip(true)
+    }
 
     console.log(flip);
 
@@ -27,7 +33,7 @@ const Card = ({ data }) => {
                 <div onClick={() => setFlip(!flip)} className={flip === true ? 'hidden' : 'font-bold text-xl mb-2 text-gray-700 text-base'}>
                     <h3>Answer: <br />{answer}</h3>
                 </div>
-                {data.length - 1 === idCount ? <Link to='/'><button onClick={() => setFlip(true)} className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Back to Home</button></Link> : <button className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2' onClick={nextCardHandler}>Next Question</button>
+                {data.length - 1 === idCount ? <Link to='/'><button onClick={() => setFlip(true)} className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>Back to Home</button></Link> : idCount === 0 ? <button className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2' onClick={nextCardHandler}>Next Question</button> : <div> <button className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2' onClick={lastCardHandler}>Last Question</button> <button className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2' onClick={nextCardHandler}>Next Question</button> </div>
                 }
             </div >
         </>

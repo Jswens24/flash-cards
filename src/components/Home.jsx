@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div className='flex absolute justify-center flex-col items-center h-full w-full '>
+        <div className='flex absolute justify-center flex-col items-center h-full w-full bg-gray-100 '>
             <h1 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 pb-2">Welcome</h1>
             <h3 className='font-bold text-xl'>Select a Topic:</h3>
             <Link to='/flashcard/sqlData'>
